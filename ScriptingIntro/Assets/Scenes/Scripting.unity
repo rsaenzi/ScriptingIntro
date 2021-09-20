@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 34961708}
   - component: {fileID: 34961709}
   m_Layer: 0
-  m_Name: Operador Punto
+  m_Name: 14. Operador Punto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 0}
+  transformPersonaje: {fileID: 0}
+  rigidbodyBossFinal: {fileID: 0}
+  zombie: {fileID: 0}
+  luzSolar: {fileID: 0}
 --- !u!1 &176561121
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +225,7 @@ GameObject:
   - component: {fileID: 234960363}
   - component: {fileID: 234960364}
   m_Layer: 0
-  m_Name: Objetos Unity
+  m_Name: 15. Objetos Unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +508,7 @@ GameObject:
   - component: {fileID: 861041919}
   - component: {fileID: 861041920}
   m_Layer: 0
-  m_Name: Ciclo de Vida
+  m_Name: 17. Ciclo de Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,7 +712,7 @@ GameObject:
   - component: {fileID: 1024198893}
   - component: {fileID: 1024198894}
   m_Layer: 0
-  m_Name: Funciones
+  m_Name: 16. Funciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -971,7 +975,7 @@ GameObject:
   - component: {fileID: 1529851117}
   - component: {fileID: 1529851118}
   m_Layer: 0
-  m_Name: Variables Compuestas
+  m_Name: 13. Variables Compuestas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
