@@ -8,7 +8,11 @@ public class ArithmeticOperators : MonoBehaviour
     // Operadores Aritmeticos
     // ----------------------
 
+    // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
+
     void Start() {
+
+        //      Concatenation   Joins strings together                      "string" + "string"
 
         // +	Addition	    Adds together two values	                x + y
         // -	Subtraction	    Subtracts one value from another	        x - y
@@ -19,8 +23,21 @@ public class ArithmeticOperators : MonoBehaviour
         // --	Decrement	    Decreases the value of a variable by 1	    x--
 
 
-        // +	Addition
+        // Concatenation   +
+        string parteA = "Hola ";
+        string parteB = "como estas?";
+
+        string mensaje = parteA + parteB;
+        print("mensaje:" + mensaje);
+
+        // print() muestra el contenido de la variable
+        int numeroEntero = 20;
+        print("numero entero:" + numeroEntero);
+
+
+        // Addition   +
         int distancia = 40 + 20;
+        print("distancia:" + distancia);
 
         int salario = 200;
         int prima = 300;
@@ -28,29 +45,45 @@ public class ArithmeticOperators : MonoBehaviour
 
         int total = salario + prima;
         total = total + bono + 15; // subsidio transporte
+        print("total:" + total);
 
-
-        // -	Subtraction
+         
+        // Subtraction   -
         int impuestos = 200;
         int saldo = salario - impuestos;
-
         saldo = saldo - 10; // iva
+        print("saldo:" + saldo);
 
 
-        // *	Multiplication
+        // Multiplication   *
+        float alto = 45.7f;
+        float ancho = 72.834f;
+        float area = alto * ancho;
+        print("area:" + area);
 
 
-        // /	Division
+        // Division   /
+        int manzanas = 100;
+        int personas = 3;
+
+        int manzanasPorPersona = manzanas / personas;
+        print("manzanasPorPersona:" + manzanasPorPersona);
 
 
-        // %	Modulus
+        // Modulus   %
+        int manzanasQueSobran = manzanas % personas;
+        print("manzanasQueSobran:" + manzanasQueSobran);
 
 
-        // ++	Increment
+        // Increment   ++
+        int edadDiana = 20;
+        edadDiana++;
+        print("edadDiana:" + edadDiana);
 
 
-        // --	Decrement
-
-
+        // Decrement   --
+        int edadPedro = 20;
+        edadPedro++;
+        print("edadPedro:" + edadPedro);
     }
 }

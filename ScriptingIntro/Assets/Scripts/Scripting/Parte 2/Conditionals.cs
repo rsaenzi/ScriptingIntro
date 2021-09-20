@@ -42,6 +42,7 @@ public class Conditionals : MonoBehaviour
             // Lorena si puede entrar
             lorenaEsFeliz = true;
         }
+
         // Aca pueden ir mas instrucciones...
         print(lorenaEsFeliz);
 
