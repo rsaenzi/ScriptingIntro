@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VariableTypes : MonoBehaviour
+public class Variables : MonoBehaviour
 {
-    // - Variables:
+    // ---------
+    // Variables
+    // ---------
+
 
     // Tambien conocidas como Propiedades, Objetos, Instancias
     // Son espacios dentro de la RAM para guardar un dato
 
 
     // Para crear una variable se sigue el siguiente formato:
-    //    type variableName = value;
+    //   type variableName = value;
 
 
     // Existen varios tipos de variables segun la naturaleza
@@ -35,43 +38,30 @@ public class VariableTypes : MonoBehaviour
 
 
     // Las variables son creadas cuando el videojuego es ejecutado
-    // y son destruidas cuando el videojuegotermina
+    // y son destruidas cuando el videojuego termina
 
     // El dato almacenado en la variable se llama 'valor'
-
     // El valor de una variable puede cambiar durante la
     // ejecucion del videojuego
 
 
     // Las variables deben ser nombradas siguiendo las siguientes reglas:
-    // 1. Puede contener letras, digitos y _
-    // 2. Debe iniciar con una letra
-    // 3. No puede tener espacios en blanco
-    // 4. Deberia iniciar con una letra minuscula
-    // 5. Si es una frase, cada letra iniciar deberia ser mayuscula
-    // 6. Sensibles a mayusculas y minusculas
-    // 7. No puede ser igual a una palabra reservada:
+    // 1. No pueden existir dos variables con el mismo nombre
+    // 2. Puede contener letras (mayusculas y minusculas), digitos y _
+    // 3. No puede iniciar con un número
+    // 4. No puede tener espacios en blanco
+    // 5. No puede ser igual a una palabra reservada:
     //    https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
 
-
-    // Si quieren ver la variables en el Unity Editor, ventana
-    // Inspector se debe agregar la palabra public antes del tipo
-
-    public int cantidadBalas = 20;
-
-    public float alturaEdificio = 35.5f;
-
-    public string nombreJugador = "Carlos";
-
-    public bool lanzallamasActivo = false;
+    //public string break = "Hola";
+    //public bool catch = true;
 
 
-    // Las variables marcadas como public pueden tener tooltips
-    // que son frases cortas descriptivas a ser mostradas en
-    // el Unity Editor
 
-    [Tooltip("Cantidad de gemas recolectadas por el usuario")]
-    public int gemas = 5;
+    // Recomendaciones:
+    // 1. Sensibles a mayusculas y minusculas
+    // 2. Deberia iniciar con una letra minuscula
+    // 3. Si es una frase, cada letra iniciar deberia ser mayuscula
 
 
     // Se recomienda que siempre las variables tengan un valor inicial

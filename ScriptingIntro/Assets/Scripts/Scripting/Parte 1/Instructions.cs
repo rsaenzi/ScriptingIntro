@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Instructions : MonoBehaviour
 {
-    // - Instrucciones:
+    // -------------
+    // Instrucciones
+    // -------------
+
 
     // Las instrucciones tambien son llamadas Comandos o Statements
     // Pueden ser de dos tipos: Una linea y Multilinea
@@ -19,6 +22,8 @@ public class Instructions : MonoBehaviour
 
     string nombreJugador = "Carolina";
 
+    bool enemigoActivo = false;
+
     Color colorDeLinea = Color.blue;
 
 
@@ -32,8 +37,12 @@ public class Instructions : MonoBehaviour
     // Sirven para agrupar instrucciones, tienen cuerpo,
     // delimitado por {}
 
+    void MostrarTotal() {
+        
+    }
+
     void AgregarDiamante() {
-        diamantes += 1;
+        escudos += 2;
     }
 
     void EstadoDeSalud() {

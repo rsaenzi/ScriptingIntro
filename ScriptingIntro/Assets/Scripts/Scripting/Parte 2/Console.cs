@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Console : MonoBehaviour {
+public class Console : MonoBehaviour
+{
 
 	void Start () {
 
-        // - Mensajes Informativos:
+        // -------
+        // Consola
+        // -------
+
 
         // Impresion de Info en consola
         Debug.Log("Este texto será mostrado en la consola, es muy util!");

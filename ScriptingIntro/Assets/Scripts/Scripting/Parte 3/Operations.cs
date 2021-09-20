@@ -12,7 +12,6 @@ public class Operations : MonoBehaviour {
 
         // Las instrucciones se ejecutan de manera secuencia
         // Hasta que no acabe una instruccion, no se ejecuta la siguiente
-        // A no ser que se especifique lo contrario (Thread)
         edadPedro = 50 + 80;
         edadPedro = 90 + 120;
         edadPedro = edadPedro + 5;

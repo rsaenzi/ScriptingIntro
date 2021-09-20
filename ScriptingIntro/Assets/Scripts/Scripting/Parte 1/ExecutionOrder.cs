@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VariableAssignment : MonoBehaviour
+public class ExecutionOrder : MonoBehaviour
 {
-    // - Asignación de Variables II:
+    // ------------------
+    // Orden de Ejecución
+    // ------------------
+
 
     int profundidadAgua = -80;
     float distanciaAlCentro = 23.67f;
@@ -39,12 +42,5 @@ public class VariableAssignment : MonoBehaviour
         // Para utilizar una variable, debe ser declarada (creada) primero
         //longitud = 34;
         //int longitud;
-
-
-        // - Asignaciones erroneas
-        //profundidadAgua = "Hola";
-        //nombre = true;
-        //nivelSuperado = 67.3f;
-        //distanciaAlCentro = "Pedro";
     }
 }
