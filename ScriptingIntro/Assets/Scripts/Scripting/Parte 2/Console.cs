@@ -12,32 +12,39 @@ public class Console : MonoBehaviour
         // -------
 
 
-        // Impresion de Info en consola
-        Debug.Log("Este texto será mostrado en la consola, es muy util!");
+        // - Tipos de Mensajes:
 
-        // Version corta de Debug.Log
-        print("Este texto también será impreso...");
+        // Mensaje Informativo
+        Debug.Log("Este texto será mostrado en la consola como un mensaje informativo, es muy util!");
 
-        // Impresion de un Warning en consola
+        // Mensaje de Advertencia
         Debug.LogWarning("Ha sucedido un una situacion no esperada");
 
-
-
-        // - Mensajes de Error:
-
-        // Impresion de un Error en consola
+        // Mensaje de Error
         Debug.LogError("Ha sucedido un error");
+
+
+        // Version corta de Debug.Log
+        print("Este texto también será impreso como mensaje informativo...");
 
 
 
         // - Contenido de Variables:
 
         // Impresion del contenido de una variable
-        int edad = 23 * 7 + 57 - 12;
-        print("Mi edad es " + edad);
+        int edad = 23;
+        print("Mi edad es " + edad + " años");
 
-        Vector3 ubicacion = Vector3.right;
-        ubicacion.x = edad / 8 * 5 + 3;
-        print("Mi ubicación es " + ubicacion);
-	}
+        float rotation = 90.33f;
+        Debug.LogWarning("Rotacion minima requerida: " + rotation + " grados");
+
+        string colorFavorito = "Azul Turquesa";
+        Debug.Log("Mi color favorito es el " + colorFavorito);
+
+        bool pocionMagicaActiva = true;
+        print("¿Pocion magica activa?" + pocionMagicaActiva);
+
+
+        print("Mi edad es " + edad + " años, y mi color favorito es el " + colorFavorito);
+    }
 }
