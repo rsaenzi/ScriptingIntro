@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Conditionals : MonoBehaviour
-{
+public class Conditionals : MonoBehaviour {
+
     // -------------
     // Condicionales
     // -------------
@@ -37,7 +37,7 @@ public class Conditionals : MonoBehaviour
         int edadLorena = 15;
         bool lorenaEsFeliz = false;
 
-        if(edadLorena >= 18) {
+        if (edadLorena >= 18) {
 
             // Lorena si puede entrar
             lorenaEsFeliz = true;
@@ -56,7 +56,7 @@ public class Conditionals : MonoBehaviour
 
         bool tengoTicketVIP = true;
 
-        if(tengoTicketVIP == true) {
+        if (tengoTicketVIP == true) {
             print("El concierto es genial!");
 
         } else {
@@ -72,7 +72,7 @@ public class Conditionals : MonoBehaviour
         // https://msdn.microsoft.com/en-us/library/06tc147t(v=vs.120).aspx
         int distancia = 50;
 
-        switch(distancia) {
+        switch (distancia) {
             case 80:
                 print("El valor de la distancia es 80");
                 break;

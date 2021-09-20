@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Loops : MonoBehaviour {
 
+    // ------
+    // Ciclos
+    // ------
+
+
     void Start() {
 
         // Estructuras ciclicas, Loops, Operadores de Iteracion
@@ -17,7 +22,7 @@ public class Loops : MonoBehaviour {
         int plataAhorrada = 0;
 
         // La meta es conseguir 50.000 pesos, mientras no los tengamos
-        while(plataAhorrada < 50000) {
+        while (plataAhorrada < 50000) {
 
             // Agregamos 10.000 pesos al ahorro
             plataAhorrada = plataAhorrada + 10000;
@@ -29,7 +34,7 @@ public class Loops : MonoBehaviour {
         // Error tipico: Que la condicion siempre sea true
         bool condicion = true;
 
-        while(condicion) {
+        while (condicion) {
             print("Hola!");
         }
 
@@ -38,7 +43,7 @@ public class Loops : MonoBehaviour {
         // Loop FOR
         // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/for
 
-        for(int index = 1; index <= 5; index++) {
+        for (int index = 1; index <= 5; index++) {
             print(index);
         }
     }

@@ -1,9 +1,11 @@
+#pragma warning disable CS0414 // The field x is assigned but its value is never used
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Assignment : MonoBehaviour
-{
+public class Assignment : MonoBehaviour {
+
     // -----------------------
     // Asignación de Variables
     // -----------------------
@@ -28,8 +30,7 @@ public class Assignment : MonoBehaviour
     // dentro de funciones, la cuales sirven para
     // agrupar instrucciones:
 
-    void Awake()
-    {
+    void Awake() {
         // Para la asignacion se usa el operador =
         estrellas = 50;
         corazones = 230;

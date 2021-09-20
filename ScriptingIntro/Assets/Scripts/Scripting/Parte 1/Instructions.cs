@@ -1,9 +1,11 @@
+#pragma warning disable CS0414 // The field x is assigned but its value is never used
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Instructions : MonoBehaviour
-{
+public class Instructions : MonoBehaviour {
+
     // -------------
     // Instrucciones
     // -------------
@@ -38,7 +40,7 @@ public class Instructions : MonoBehaviour
     // delimitado por {}
 
     void MostrarTotal() {
-        
+
     }
 
     void AgregarDiamante() {
@@ -47,7 +49,7 @@ public class Instructions : MonoBehaviour
 
     void EstadoDeSalud() {
 
-        if(vidas == 0) {
+        if (vidas == 0) {
             print("Haz perdido el nivel");
         }
     }

@@ -1,9 +1,8 @@
-﻿using System.Collections;
+﻿#pragma warning disable 0108 // Member hides inherited member
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-// Member hides inherited member
-#pragma warning disable 0108
 
 public class DotOperator : MonoBehaviour {
 

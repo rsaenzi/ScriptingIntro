@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AssignmentOperators : MonoBehaviour
-{
+public class AssignmentOperators : MonoBehaviour {
+
     // ------------------------
     // Operadores de Asignación
     // ------------------------
+
 
     void Start() {
 

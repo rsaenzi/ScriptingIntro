@@ -1,9 +1,11 @@
+#pragma warning disable CS0414 // The field x is assigned but its value is never used
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Variables : MonoBehaviour
-{
+public class Variables : MonoBehaviour {
+
     // ---------
     // Variables
     // ---------

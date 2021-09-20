@@ -1,9 +1,11 @@
+#pragma warning disable CS0414 // The field x is assigned but its value is never used
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExecutionOrder : MonoBehaviour
-{
+public class ExecutionOrder : MonoBehaviour {
+
     // ------------------
     // Orden de Ejecución
     // ------------------
@@ -13,10 +15,9 @@ public class ExecutionOrder : MonoBehaviour
     float distanciaAlCentro = 23.67f;
     string nombre = "Katherine";
     bool nivelSuperado = false;
-    
 
-    void Start()
-    {
+
+    void Start() {
         // El contenido de una variable puede cambiar
         // tantas veces como se quiera
         profundidadAgua = -50;

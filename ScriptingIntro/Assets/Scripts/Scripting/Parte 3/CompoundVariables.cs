@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CompoundVariables : MonoBehaviour
-{
+public class CompoundVariables : MonoBehaviour {
+
     // --------------------
     // Variables Compuestas
     // --------------------
@@ -48,8 +48,7 @@ public class CompoundVariables : MonoBehaviour
     public GameObject capsula3D;
 
 
-    void Start()
-    {
+    void Start() {
         // Las variables compuestas tambien pueden cambiar
         // tantas veces como se quiera
 

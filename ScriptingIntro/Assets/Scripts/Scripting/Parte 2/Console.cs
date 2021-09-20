@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Console : MonoBehaviour
-{
+public class Console : MonoBehaviour {
+
     // -------
     // Consola
     // -------
 
 
-    void Start () {
+    void Start() {
 
         // - Tipos de Mensajes:
 

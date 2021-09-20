@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Visibility : MonoBehaviour
-{
+public class Visibility : MonoBehaviour {
+
     // ------------------------
     // Visibilidad de Variables
     // ------------------------

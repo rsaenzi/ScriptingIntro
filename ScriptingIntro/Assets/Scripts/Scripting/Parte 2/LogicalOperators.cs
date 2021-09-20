@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LogicalOperators : MonoBehaviour
-{
+public class LogicalOperators : MonoBehaviour {
+
     // ----------------------
     // Operadores Lógicos
     // ----------------------
@@ -22,10 +22,10 @@ public class LogicalOperators : MonoBehaviour
 
 
         // Logical and      &&
-        bool tienePlata = true;
-        bool tieneNovia = true;
-        bool esFeliz = tienePlata || tieneNovia;
-        print("esFeliz:" + esFeliz);
+        bool haceEjercicio = true;
+        bool comeSano = true;
+        bool tieneBuenaSalud = haceEjercicio && comeSano;
+        print("tieneBuenaSalud:" + tieneBuenaSalud);
 
         int edad = 45;
         bool esAdolescente = edad >= 10 && edad <= 19;
@@ -33,10 +33,10 @@ public class LogicalOperators : MonoBehaviour
 
 
         // Logical or       ||
-        bool haceEjercicio = true;
-        bool comeSano = true;
-        bool tieneBuenaSalud = haceEjercicio && comeSano;
-        print("tieneBuenaSalud:" + tieneBuenaSalud);
+        bool tienePlata = true;
+        bool tieneNovia = true;
+        bool esFeliz = tienePlata || tieneNovia;
+        print("esFeliz:" + esFeliz);
 
         int estrellas = 50;
         int diamantes = 25;

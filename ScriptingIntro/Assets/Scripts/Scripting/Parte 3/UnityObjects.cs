@@ -1,10 +1,9 @@
-﻿using System.Collections;
+﻿#pragma warning disable CS0108 // 'UnityObjects.collider' hides inherited member 'Component.collider'. Use the new keyword if hiding was intended.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditorInternal;
-
-// Member hides inherited member
-#pragma warning disable 0108
 
 public class UnityObjects : MonoBehaviour {
 

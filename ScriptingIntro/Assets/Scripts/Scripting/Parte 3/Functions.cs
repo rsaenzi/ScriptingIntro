@@ -1,10 +1,9 @@
-﻿using System.Collections;
+﻿#pragma warning disable CS0414 // The field x is assigned but its value is never used
+#pragma warning disable CS0219 // The variable x is assigned but its value is never used
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-// private field assigned but not used.
-#pragma warning disable 0414
-#pragma warning disable 0219
 
 public class Functions : MonoBehaviour {
 

@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArithmeticOperators : MonoBehaviour
-{
+public class ArithmeticOperators : MonoBehaviour {
+
     // ----------------------
     // Operadores Aritmeticos
     // ----------------------
 
-    // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
     void Start() {
 
@@ -21,6 +20,8 @@ public class ArithmeticOperators : MonoBehaviour
         // %	Modulus	        Returns the division remainder	            x % y
         // ++	Increment	    Increases the value of a variable by 1	    x++
         // --	Decrement	    Decreases the value of a variable by 1	    x--
+
+        // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
 
         // Concatenation   +
@@ -47,7 +48,7 @@ public class ArithmeticOperators : MonoBehaviour
         total = total + bono + 15; // subsidio transporte
         print("total:" + total);
 
-         
+
         // Subtraction   -
         int impuestos = 200;
         int saldo = salario - impuestos;

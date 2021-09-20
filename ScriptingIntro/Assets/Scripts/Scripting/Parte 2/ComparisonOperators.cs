@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComparisonOperators : MonoBehaviour
-{
+public class ComparisonOperators : MonoBehaviour {
+
     // -------------------------
     // Operadores de Comparación
     // -------------------------
