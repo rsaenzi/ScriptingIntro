@@ -5,10 +5,24 @@ using UnityEngine;
 // Member hides inherited member
 #pragma warning disable 0108
 
-public class Objects : MonoBehaviour {
+public class DotOperator : MonoBehaviour {
+
+    // --------------------
+    // Operador Punto
+    // --------------------
+
 
     // El tipo de una variable u objeto, tambien se conoce como Class o Clase
     public Collider collider;
+
+    public Transform transformPersonaje;
+
+    public Rigidbody rigidbodyBossFinal;
+
+    public SpriteRenderer zombie;
+
+    public Light luzSolar;
+
 
     void Start() {
 
@@ -29,17 +43,35 @@ public class Objects : MonoBehaviour {
 
         // Ejemplos:
 
-        // Tipo o Clase int (Integer = Numero Entero)
+        // int
         int salario = 500;
         salario.ToString();
 
-        // Tipo o Clase String (= Cadena de Texto)
+        // String
         string nombre = "Rigoberto";
         print(nombre.Length);
 
-        // Tipo o Clase Vector3
+        // Vector3
         Vector3 ubicacion = new Vector3(0.5f, 0.8f, 14.63f);
         float coordX = ubicacion.x;
         print(coordX);
+
+        Vector3 posicionEnemigo = new Vector3(6, 3, 2);
+        posicionEnemigo.x = 23;
+        posicionEnemigo.y = 12;
+
+        // Transform
+        transformPersonaje.position = new Vector3(0, 20, -3);
+        transformPersonaje.eulerAngles = new Vector3(45, 0, 0);
+        transformPersonaje.position = new Vector3(4, 7, 0);
+
+        // Rigidbody
+        rigidbodyBossFinal.mass = 23;
+
+        // Light
+        luzSolar.color = new Color(0.0f, 0.0f, 1.0f);
+
+        // Sprite Renderer
+        zombie.flipX = true;
     }
 }

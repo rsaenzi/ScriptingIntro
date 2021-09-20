@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Console : MonoBehaviour
 {
+    // -------
+    // Consola
+    // -------
 
-	void Start () {
 
-        // -------
-        // Consola
-        // -------
-
+    void Start () {
 
         // - Tipos de Mensajes:
 

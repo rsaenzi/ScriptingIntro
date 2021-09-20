@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class UnityLifeCycle : MonoBehaviour {
 
+    // -------------------
+    // Ciclo de Vida Unity
+    // -------------------
+
+
     // https://docs.unity3d.com/Manual/ExecutionOrder.html
 
     void OnApplicationPause(bool pause) {

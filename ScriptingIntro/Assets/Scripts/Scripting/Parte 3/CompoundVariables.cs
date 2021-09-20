@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Constructors : MonoBehaviour
+public class CompoundVariables : MonoBehaviour
 {
-    // - Variables Compuestas
+    // --------------------
+    // Variables Compuestas
+    // --------------------
+
 
     // Las variables se pueden agrupar en variables compuestas
     // tambien llamadas objetos, para asignar el valor inicial
@@ -18,7 +21,10 @@ public class Constructors : MonoBehaviour
 
 
     // Los componentes de Unity son variables compuestas
+
     // Nota: Saldrán errores al ejecutar el videojuego
+    //       sino se le da un valor inicial a estas variables
+    //       en el Unity Editor
 
     public Transform transformEnemigo;
 
@@ -62,22 +68,5 @@ public class Constructors : MonoBehaviour
 
         Color colorPoweUpA = new Color(0, 1, 0);
         Color colorPoweUpB = Color.green;
-
-
-        // Para cambiar solo una variable dentro de una variable
-        // compuesta se usa el operador .
-        Vector3 posicionEnemigo = new Vector3(6, 3, 2);
-        posicionEnemigo.x = 23;
-        posicionEnemigo.y = 12;
-
-        transformEnemigo.position = new Vector3(0, 20, -3);
-        transformEnemigo.eulerAngles = new Vector3(45, 0, 0);
-        transformEnemigo.position = new Vector3(4, 7, 0);
-
-        rigidbodyCubo.mass = 23;
-
-        luzDelSol.color = new Color(0.0f, 0.0f, 1.0f);
-
-        bossFinal.flipX = true;
     }
 }

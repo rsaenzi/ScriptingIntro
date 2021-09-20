@@ -8,6 +8,11 @@ using UnityEditorInternal;
 
 public class UnityObjects : MonoBehaviour {
 
+    // --------------
+    // Objectos Unity
+    // --------------
+
+
     // Operador this
     void ThisOperations() {
 

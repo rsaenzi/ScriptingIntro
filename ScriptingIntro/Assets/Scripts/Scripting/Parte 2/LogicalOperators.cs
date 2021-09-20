@@ -8,6 +8,7 @@ public class LogicalOperators : MonoBehaviour
     // Operadores Lógicos
     // ----------------------
 
+
     void Start() {
 
         // && 	Logical and         x < 5 && x < 10

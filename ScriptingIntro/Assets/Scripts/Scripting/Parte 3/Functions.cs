@@ -8,7 +8,11 @@ using UnityEngine;
 
 public class Functions : MonoBehaviour {
 
-    // - Funciones:
+    // ---------
+    // Funciones
+    // ---------
+
+
     // Agrupacion de instrucciones, a la cual se le asigna un nombre
 
     void Update() {
