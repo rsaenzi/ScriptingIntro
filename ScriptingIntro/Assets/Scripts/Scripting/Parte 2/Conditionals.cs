@@ -15,11 +15,11 @@ public class Conditionals : MonoBehaviour {
         // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/selection-statements
 
 
-        // - Condicional IF:
-        bool entrada = false;
-
         // Instrucción A
         // Instrucción B
+
+        // - Condicional IF:
+        bool entrada = false;
 
         // El procesador ejecuta las instrucciones dentro
         // del cuerpo del IF, si la instruccion dentro del 

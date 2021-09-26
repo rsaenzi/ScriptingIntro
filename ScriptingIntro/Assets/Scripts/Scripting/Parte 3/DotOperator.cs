@@ -11,66 +11,112 @@ public class DotOperator : MonoBehaviour {
     // --------------------
 
 
-    // El tipo de una variable u objeto, tambien se conoce como Class o Clase
-    public Collider collider;
+    public Collider colliderEnemigo;
 
     public Transform transformPersonaje;
 
     public Rigidbody rigidbodyBossFinal;
 
-    public SpriteRenderer zombie;
+    public SpriteRenderer rendererZombie;
 
     public Light luzSolar;
 
 
     void Start() {
 
-        // Podemos obtener o asignar valores a las propiedades de los objetos
-        // Para esto se utiliza el .
-
-        // Aca estamos accediendo o leyendo el contenido de la variable bounds
-        print(collider.bounds);
-
-        // Aca estamos asignando un valor a la variable enabled
-        collider.enabled = false;
+        // Podemos leer o escribir los valores de cualquiera
+        // de las propiedades (variables internas) de los objetos
+        // para esto se utiliza el .
 
 
-        // Tambien podemos invocar o ejecutar las funciones que 
-        // tiene la clase Collider. Tambien se usa el .
-        int id = collider.GetInstanceID();
-        string name = collider.ToString();
+        // Lectura (copiar)
+
+        bool orientacionZombieEnX = rendererZombie.flipX;
+
+        bool orientacionZombieEnY = rendererZombie.flipY;
+
+        Color colorSpriteZombie = rendererZombie.color;
+
+
+
+        // Escritura (cambiar)
+
+        rendererZombie.flipX = true;
+
+        bool nuevaOrientacionEnY = false;
+        rendererZombie.flipY = nuevaOrientacionEnY;
+
+        rendererZombie.color = Color.green;
+
+
 
         // Ejemplos:
-
-        // int
-        int salario = 500;
-        salario.ToString();
-
-        // String
-        string nombre = "Rigoberto";
-        print(nombre.Length);
 
         // Vector3
         Vector3 ubicacion = new Vector3(0.5f, 0.8f, 14.63f);
         float coordX = ubicacion.x;
-        print(coordX);
 
         Vector3 posicionEnemigo = new Vector3(6, 3, 2);
         posicionEnemigo.x = 23;
         posicionEnemigo.y = 12;
+        posicionEnemigo.z = 45;
+
 
         // Transform
         transformPersonaje.position = new Vector3(0, 20, -3);
         transformPersonaje.eulerAngles = new Vector3(45, 0, 0);
-        transformPersonaje.position = new Vector3(4, 7, 0);
+        transformPersonaje.localScale = new Vector3(4, 7, 0);
+
 
         // Rigidbody
         rigidbodyBossFinal.mass = 23;
+        rigidbodyBossFinal.useGravity = false;
+
 
         // Light
         luzSolar.color = new Color(0.0f, 0.0f, 1.0f);
+        luzSolar.intensity = 0.7f;
+        luzSolar.range = 5.89f;
 
-        // Sprite Renderer
-        zombie.flipX = true;
+        // Collider
+        colliderEnemigo.enabled = false;
+        colliderEnemigo.isTrigger = false;
+
+
+
+
+        // Los objetos pueden contener Funciones, que son
+        // grupos de instrucciones que cambian las variables
+        // internas del objeto
+
+        // Ejemplo:
+        // Necesitamos mover un game object:
+        //   3 mts a la derecha
+        //   2 mts hacia arriba
+        //   1 mt hacia adelante
+        Vector3 movimiento = new Vector3(3, 2, 1);
+
+
+        // Debemos copiar la posicion inicial del objeto
+        Vector3 posicion = transformPersonaje.position;
+
+        // Realizamos los calculos
+        posicion.x = posicion.x + movimiento.x;
+        posicion.y = posicion.y + movimiento.y;
+        posicion.z = posicion.z + movimiento.z;
+
+        // Actualizamos la posicion del personaje
+        transformPersonaje.position = posicion;
+
+
+
+        // Otra alternativa es buscar una funcion que ya tenga
+        // esas instrucciones...
+
+        transform.Translate(movimiento);
+
+
+        // El operador . tambien permite invocar funciones, las
+        // cuales ayudan a simplificar los scripts
     }
 }

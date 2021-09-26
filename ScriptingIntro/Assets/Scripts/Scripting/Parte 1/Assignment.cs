@@ -31,6 +31,7 @@ public class Assignment : MonoBehaviour {
     // agrupar instrucciones:
 
     void Awake() {
+
         // Para la asignacion se usa el operador =
         estrellas = 50;
         corazones = 230;

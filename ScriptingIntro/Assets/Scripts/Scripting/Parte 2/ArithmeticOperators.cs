@@ -84,7 +84,7 @@ public class ArithmeticOperators : MonoBehaviour {
 
         // Decrement   --
         int edadPedro = 20;
-        edadPedro++;
+        edadPedro--;
         print("edadPedro:" + edadPedro);
     }
 }
