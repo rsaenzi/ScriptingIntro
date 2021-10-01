@@ -12,7 +12,6 @@ public class UnityObjects : MonoBehaviour {
     // -------------
 
 
-
     // Componente Transform
     public Transform piramidTransform;
 
@@ -86,7 +85,6 @@ public class UnityObjects : MonoBehaviour {
 
 
 
-
     // Keyword this
     public GameObject cubo;
 
@@ -104,7 +102,6 @@ public class UnityObjects : MonoBehaviour {
         this.transform.Rotate(Vector3.right);
         cubo.transform.Rotate(Vector3.right);
     }
-
 
 
 

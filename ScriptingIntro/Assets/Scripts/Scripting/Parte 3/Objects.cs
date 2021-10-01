@@ -71,8 +71,10 @@ public class Objects : MonoBehaviour {
         Vector3 posicionInicialA = new Vector3(1, 0, 0);
         Vector3 posicionInicialB = Vector3.right;
 
+
         Vector3 coordenadasA = new Vector2(0, -1);
         Vector3 coordenadasB = Vector2.down;
+        
 
         Color colorPoweUpA = new Color(0, 1, 0);
         Color colorPoweUpB = Color.green;

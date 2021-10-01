@@ -72,7 +72,7 @@ public class Loops : MonoBehaviour {
         /*
         bool condicion = 5 > 3;
 
-        while (condicion) {
+        while (condicion == true) {
             print("Hola!");
         }
         */
