@@ -9,7 +9,11 @@ public class UnityLifeCycle : MonoBehaviour {
     // -------------------
 
 
+    // Si una funcion tiene un nombre particular entonces es invocada
+    // en un momento determinado de manera automatica, siguiendo el
+    // Orden de Ejecucion de Funciones de Unity
     // https://docs.unity3d.com/Manual/ExecutionOrder.html
+
 
     void OnApplicationPause(bool pause) {
         print("OnApplicationPause " + pause);
@@ -50,7 +54,4 @@ public class UnityLifeCycle : MonoBehaviour {
     void OnDisable() {
         print("OnDisable");
     }
-
-    // Para estas funciones, el orden de ejecución 
-    // está determinado por Unity
 }

@@ -19,13 +19,14 @@ public class Loops : MonoBehaviour {
         La estructura de los ciclos es muy similar a la de los
         condicionales IF
 
-        if () {
+            if () {
             
-        }
+            }
 
-        while () {
 
-        }
+            while () {
+
+            }
 
         */
 

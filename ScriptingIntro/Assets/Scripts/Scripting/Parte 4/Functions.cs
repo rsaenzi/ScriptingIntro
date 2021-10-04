@@ -12,7 +12,29 @@ public class Functions : MonoBehaviour {
     // ---------
 
 
+    // Functions, Methods, Blocks
+    // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods
+
+    /*
+
+    Estructura de una función:
+
+        <return_type> <name>(<parameters>)
+        {
+            <instruction>
+            ...
+            <instruction>
+
+            <return>
+        }
+
+
+    */
+
+
     // Agrupacion de instrucciones, a la cual se le asigna un nombre
+    // El nombre de una función suele tener la primera letra en mayuscula
+
 
     void Update() {
         // Instrucción X
@@ -35,9 +57,11 @@ public class Functions : MonoBehaviour {
 
 
 
-    // Se suelen usar para agrupar instrucciones similares
+    // Se suelen usar para agrupar dos o mas grupos de instrucciones
+    // similares, es decir, son una forma de abstracción logica
 
-    void EjemploRepeticion() {
+    void PuntajePersonajes() {
+
 
         // Variables que influyen en el puntaje total alcanzado por Mario
         int monedasMario = 22;
@@ -227,122 +251,5 @@ public class Functions : MonoBehaviour {
 
         // Retornamos el puntaje total de el personaje
         return puntaje;
-    }
-
-    void EjemploSinRepeticion() {
-
-        // Mario
-        int puntajeMario = CalcularPuntajeTotal(22, 15, 9, 10, 6, 38);
-        print("El puntaje total de Mario es de " + puntajeMario + " puntos!");
-
-        // Luigi
-        int puntajeLuigi = CalcularPuntajeTotal(49, 20, 5, 62, 88, 91);
-        print("El puntaje total de Luigi es de " + puntajeLuigi + " puntos!");
-
-        // Peach
-        int puntajePeach = CalcularPuntajeTotal(6, 57, 26, 29, 31, 10);
-        print("El puntaje total de Peach es de " + puntajePeach + " puntos!");
-
-        // Joshi
-        int puntajeJoshi = CalcularPuntajeTotal(38, 90, 52, 28, 53, 26);
-        print("El puntaje total de Joshi es de " + puntajeJoshi + " puntos!");
-
-        // Toad
-        int puntajeToad = CalcularPuntajeTotal(47, 71, 39, 18, 5, 60);
-        print("El puntaje total de Toad es de " + puntajeToad + " puntos!");
-    }
-
-
-
-
-
-    // Las funciones pueden recibir una o mas Variables de Entrada
-    void CrearUsuario(int edad, string saludo) {
-        // Instruccion 1
-        // Instruccion 2
-        // Instruccion 3
-    }
-
-    // Las funciones pueden Retornar una un valor
-    int CalculoDeEdad() {
-        // Instruccion X
-        // Instruccion Y
-        // Instruccion X
-
-        // Aqui se retorna el numero 6 a
-        // quien haya invocado esta funcion
-        int edad = 6;
-        return edad;
-    }
-
-    // Las funciones pueden recibir variables, ejecutar sus 
-    // operaciones y finalmente retornar un valor de tipo float
-    float CalculoDeDistancia(Vector2 puntoA, Vector2 puntoB) {
-        // Instruccion A
-        // Instruccion B
-        // Instruccion C
-        return 78.6f;
-    }
-
-
-    // Ejemplos:
-    int Suma(int numeroA, int numeroB) {
-        return numeroA + numeroB;
-    }
-
-    int Resta(int numeroA, int numeroB) {
-        return numeroA - numeroB;
-    }
-
-
-
-
-
-    // - Orden de Ejecucion:
-    // Su ejecucion no sigue el mismo orden que las instrucciones
-    // sino que depende del Orden de Ejecucion de Funciones de Unity
-
-
-    // Como invoco o ejecuto estas funciones?
-    void OnEnable() {
-
-        // Funcion que recibe variables de entrada
-        CrearUsuario(45, "Hola");
-
-        // Funcion que retorna un valor
-        int edadPedro = CalculoDeEdad();
-        print(edadPedro);
-
-        // Funcion que recibe variables de entrada y retorna una valor
-        int total = Suma(30, 20);
-        print(total);
-
-        // Otro ejemplo
-        Vector2 posicionPersonaje = new Vector2(25, -70);
-        Vector2 posicionEnemigo = new Vector2(56, 32);
-
-        float distanciaEntreEllos = CalculoDeDistancia(posicionPersonaje, posicionEnemigo);
-        print(distanciaEntreEllos);
-    }
-
-
-
-
-    // - Alcance de Variables:
-    // Las variables creadas por fuera de las funciones son visibles
-    // para todas las funciones
-
-    int puntaje = 500;
-
-    void FuncionA() {
-
-        // Tan pronto como la funcion acabe su ejecucion,
-        // la variable es eliminada de la memoria RAM
-        int vidas = 10;
-    }
-
-    void FuncionB() {
-        // puntaje = 800;
-        // vidas = 20;
     }
 }
