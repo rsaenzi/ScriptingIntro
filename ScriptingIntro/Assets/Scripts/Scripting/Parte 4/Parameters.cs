@@ -10,13 +10,15 @@ public class Parameters : MonoBehaviour {
     // ---------------------
 
 
-    void MostarUbicacionEnemigo() {
+    void CalcularUbicacionEnemigo() {
 
         // Instrucción A
         // Instrucción B
 
-        Vector2 ubicacionEnemigo = new Vector2(120, 50);
+        float coordenadaX = 45 / 6;
+        float coordenadaY = 175 * 4;
 
+        Vector2 ubicacionEnemigo = new Vector2(coordenadaX, coordenadaY);
         print("La ubicación del enemigo es " + ubicacionEnemigo);
 
         // Instrucción C
@@ -28,12 +30,13 @@ public class Parameters : MonoBehaviour {
     // Las funciones pueden recibir (o no) una o mas Variables de Entrada
     // tambien llamadas Parametros
 
-    void CrearUsuario(string nombre, string apellido) {
+    void NombreUsuario(string nombres, string primerApellido, string segundoApellido) {
 
         // Instrucción A
         // Instrucción B
 
-        print("Usuario " + nombre + " " + apellido + " creado");
+        string nombreCompleto = nombres + " " + primerApellido + " " + segundoApellido;
+        print("El nombre completo es " + nombreCompleto);
 
         // Instrucción C
         // Instrucción D
@@ -61,12 +64,14 @@ public class Parameters : MonoBehaviour {
 
     // Ejemplo de funcion con parametros y retorno de valor
 
+    // IMC = kg / m2
     float IndiceMasaCorporal(float peso, float estatura) {
 
         // Instrucción A
         // Instrucción B
 
-        float indice = peso * (estatura * estatura); // IMC = kg / m2
+        float estaturaAlCuadrado = estatura * estatura;
+        float indice = peso * estaturaAlCuadrado;
 
         return indice;
     }

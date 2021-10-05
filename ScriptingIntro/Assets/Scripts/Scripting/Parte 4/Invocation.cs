@@ -19,9 +19,12 @@ public class Invocation : MonoBehaviour {
     // El orden de ejecución de las funciones NO es en orden descendente
 
 
+
+
+    // Ejemplo de invocacion de funciones
+
     void Asia() {
         print("Paises de Asia:");
-
         Japon();
         China();
         Filipinas();
@@ -29,19 +32,15 @@ public class Invocation : MonoBehaviour {
 
     void America() {
         print("Paises de America:");
-
         Mexico();
         Colombia();
         Argentina();
-        Canada();
     }
 
     void Europa() {
         print("Paises de Europa:");
-
         Francia();
         Alemania();
-        Grecia();
         Rusia();
     }
 
@@ -51,10 +50,6 @@ public class Invocation : MonoBehaviour {
 
     void Argentina() {
         print("- Argentina");
-    }
-
-    void Canada() {
-        print("- Canada");
     }
 
     void Colombia() {
@@ -71,10 +66,6 @@ public class Invocation : MonoBehaviour {
 
     void Francia() {
         print("- Francia");
-    }
-
-    void Grecia() {
-        print("- Grecia");
     }
 
     void Japon() {
@@ -99,9 +90,13 @@ public class Invocation : MonoBehaviour {
 
 
 
+
     // Ejemplo de invocacion de funciones que tienen parametros
 
     int multiplicar(int valorA, int valorB) {
+        // int resultado = valorA * valorB;
+        // return resultado;
+
         return valorA * valorB;
     }
 
@@ -128,23 +123,24 @@ public class Invocation : MonoBehaviour {
 
 
         int totalResta = restar(15, 3);
-        print("La resta de los numeros es " + totalSuma);
+        print("La resta de los numeros es " + totalResta);
 
 
         int totalMultiplicacion = multiplicar(15, 3);
-        print("La multiplicacion de los numeros es " + totalSuma);
+        print("La multiplicacion de los numeros es " + totalMultiplicacion);
 
 
         int totalDivision = dividir(15, 3);
-        print("La division de los numeros es " + totalSuma);
+        print("La division de los numeros es " + totalDivision);
     }
+
 
 
 
 
     // Ejemplo para el calculo de puntajes
 
-    int CalcularPuntajeTotal(int monedas, int estrellas, int diamantes, int cofres, int ataques, int segundos) {
+    int CalcularPuntaje(int monedas, int estrellas, int diamantes, int cofres, int ataques, int segundos) {
 
         // Por cada moneda recolectada por el personaje se le dan 200 puntos
         int puntaje = monedas * 200;
@@ -172,25 +168,26 @@ public class Invocation : MonoBehaviour {
     void OnEnable() { // Esta funcion se invoca primero
 
         // Mario
-        int puntajeMario = CalcularPuntajeTotal(22, 15, 9, 10, 6, 38);
+        int puntajeMario = CalcularPuntaje(22, 15, 9, 10, 6, 38);
         print("El puntaje total de Mario es de " + puntajeMario + " puntos!");
 
         // Luigi
-        int puntajeLuigi = CalcularPuntajeTotal(49, 20, 5, 62, 88, 91);
+        int puntajeLuigi = CalcularPuntaje(49, 20, 5, 62, 88, 91);
         print("El puntaje total de Luigi es de " + puntajeLuigi + " puntos!");
 
         // Peach
-        int puntajePeach = CalcularPuntajeTotal(6, 57, 26, 29, 31, 10);
+        int puntajePeach = CalcularPuntaje(6, 57, 26, 29, 31, 10);
         print("El puntaje total de Peach es de " + puntajePeach + " puntos!");
 
         // Joshi
-        int puntajeJoshi = CalcularPuntajeTotal(38, 90, 52, 28, 53, 26);
+        int puntajeJoshi = CalcularPuntaje(38, 90, 52, 28, 53, 26);
         print("El puntaje total de Joshi es de " + puntajeJoshi + " puntos!");
 
         // Toad
-        int puntajeToad = CalcularPuntajeTotal(47, 71, 39, 18, 5, 60);
+        int puntajeToad = CalcularPuntaje(47, 71, 39, 18, 5, 60);
         print("El puntaje total de Toad es de " + puntajeToad + " puntos!");
     }
+
 
 
 

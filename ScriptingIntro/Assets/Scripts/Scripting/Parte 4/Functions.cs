@@ -49,7 +49,7 @@ public class Functions : MonoBehaviour {
         // Instrucción 4
     }
 
-    void CalculoPuntaje() {
+    void DisparoPersonaje() {
         // Instrucción A
         // Instrucción B
     }
@@ -60,8 +60,7 @@ public class Functions : MonoBehaviour {
     // Se suelen usar para agrupar dos o mas grupos de instrucciones
     // similares, es decir, son una forma de abstracción logica
 
-    void PuntajePersonajes() {
-
+    void RepeticionPuntajes() {
 
         // Variables que influyen en el puntaje total alcanzado por Mario
         int monedasMario = 22;
@@ -229,7 +228,7 @@ public class Functions : MonoBehaviour {
 
     // Esta funcion evita la repeticion de las instrucciones anteriores
 
-    int CalcularPuntajeTotal(int monedas, int estrellas, int diamantes, int cofres, int ataques, int segundos) {
+    int CalcularPuntaje(int monedas, int estrellas, int diamantes, int cofres, int ataques, int segundos) {
 
         // Por cada moneda recolectada por el personaje se le dan 200 puntos
         int puntaje = monedas * 200;
